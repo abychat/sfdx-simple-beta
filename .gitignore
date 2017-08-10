@@ -1,0 +1,11 @@
+.DS_Store
+.sfdx
+.project
+.salesforce
+.settings
+node_modules
+.idea
+mdapioutput_dir/
+mdapipkg/
+/force-app/main/default/objects/Knowledge__kav.object-meta.xml
+/force-app/main/default/tabs/Knowledge__kav.tab-meta.xml
