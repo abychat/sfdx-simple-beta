@@ -19,10 +19,8 @@ before_install:
 - "./sfdx/install"
 - export PATH=./sfdx/$(pwd):$PATH
 - sfdx update
-- sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key
-  --username $USERNAME --setdefaultdevhubusername
-- sfdx force:auth:jwt:grant -i $SBOXCONSUMERKEY -f assets/server.key --instanceUrl https://test.salesforce.com 'https://dxhubtrialdemo--dxhubdev.cs9.my.salesforce.com/'
-  -u $SBOXUSERNAME
+- sfdx force:auth:jwt:grant -i $CONSUMERKEY -f assets/server.key --username $USERNAME --setdefaultdevhubusername
+- sfdx force:auth:jwt:grant -i $SBOXCONSUMERKEY -f assets/server.key --instanceUrl 'https://test.salesforce.com 'https://dxhubtrialdemo--dxhubdev.cs9.my.salesforce.com/' -u $SBOXUSERNAME
 script:
 - sfdx force:org:create -s -f config/workspace-scratch-def.json -a travisciorg
 - sfdx force:source:push -u travisciorg
