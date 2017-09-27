@@ -10,7 +10,7 @@
       <apex:outputPanel styleClass="rules">
         <p>The 1st rule of SFDX Demo is: You do not talk about SFDX Demo.</p>
         <p>The 2nd rule of SFDX Demo is: You do not talk about SFDX Demo.</p>
-        <p>The 3rd rule of SFDX Demo is: You do not talk about SFDX Demo.</p>
+        <p>The 3rd rule of SFDX Demo is: You can talk about SFDX Demo around Dreamforce.</p>
       </apex:outputPanel>
 
       <!-- Fields -->
