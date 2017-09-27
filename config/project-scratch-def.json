@@ -9,6 +9,6 @@
     ],
     "disabled": []
   },
-  "orgName": "Your Company",
-  "adminEmail": "yourname@example.com"
+  "orgName": "SFDX Demo Org",
+  "adminEmail": "achaturvedi@salesforce.com"
 }

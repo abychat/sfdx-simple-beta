@@ -5,7 +5,7 @@
 
   <!-- Begin Form -->
   <apex:form >
-    <apex:pageBlock title="Rules of SFDX Demo" mode="edit">
+    <apex:pageBlock title="Rules of SFDX Demo Beta" mode="edit">
       <!-- SFDX99 Rules -->
       <apex:outputPanel styleClass="rules">
         <p>The 1st rule of SFDX Demo is: You do not talk about SFDX Demo.</p>
