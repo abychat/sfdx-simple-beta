@@ -21,7 +21,7 @@ before_install:
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key --username $USERNAME --setdefaultdevhubusername -a HubOrg
 - sfdx force:auth:jwt:grant -i $SBOXCONSUMERKEY -f assets/server.key --instanceurl 'https://test.salesforce.com' -u $SBOXUSERNAME
 script:
-- sfdx force:org:create -v HubOrg -s -f config/workspace-scratch-def.json -a travisciorg
+- sfdx force:org:create -v HubOrg -s -f config/project-scratch-def.json -a travisciorg
 - sfdx force:source:push -u travisciorg
 - sfdx force:apex:test:run -u travisciorg -c -r human
 - mkdir mdapioutput_dir
