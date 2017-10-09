@@ -8,50 +8,23 @@ The Salesforce Developer Experience (SFDX) starts with source code living in you
 
 Our first goal is to set up a developer project which we'll use to modify our application. It starts by cloning the repository. Use the command ...
 
-    git clone https://github.com/forcedotcom/sfdx-simple.git
+    git clone https://github.com/forcedotcom/sfdx-simple-beta.git
 
 … or ...
 
-    git clone git@github.com:forcedotcom/sfdx-simple.git
+    git clone git@github.com:forcedotcom/sfdx-simple-beta.git
 
 … to clone the repository. Then, open the directory.
 
-    cd sfdx-simple
+    cd sfdx-simple-beta
     
 ## Steps
 
-Authorize to your Developer Hub (Dev Hub) org.
-
-    sfdx force:auth:web:login -d -a "Hub Org"
-
-If you already have an authorized Dev Hub, set it as the default:
-
-    sfdx force:config:set defaultdevhubusername=<username|alias>
-
-Create a scratch org.
-
-    sfdx force:org:create -s -f config/project-scratch-def.json
-
-If you want to use an existing scratch org, set it as the default:
-
-    sfdx force:config:set defaultausername=<username|alias>
-
-Push your source.
-
-    sfdx force:source:push
-
-Run your tests.
-
-    sfdx force:apex:test:run
-    sfdx force:apex:test:report -i <id>
-
-Open the scratch org.
-
-    sfdx force:org:open --path one/one.app
+Follow Instructions in this Quip Doc - https://salesforce.quip.com/aodpARLkqmAf
 
 ## Resources
 
-For details on using sfdx-simple, please review the [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev).
+For details on using sfdx-simple-beta, please review the [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev).
 
 ## Description of Files and Directories  
 
